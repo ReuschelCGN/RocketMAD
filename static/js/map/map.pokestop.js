@@ -5,9 +5,9 @@ notifiedPokestopData, pokestopInvasionZIndex,
 pokestopLureZIndex, pokestopNotifiedZIndex, pokestopQuestZIndex,
 pokestopZIndex, removeMarker, removeRangeCircle, sendNotification, settings,
 setupRangeCircle, updateLabelDiffTime, updateRangeCircle, updateMarkerLayer,
-filterManagers, updateMap
+filterManagers
 */
-/* exported processPokestop, setQuestFormFilter */
+/* exported processPokestop */
 
 function isPokestopMeetsQuestFilters(pokestop) {
     if (!settings.showQuests || !pokestop.quest) {
@@ -29,8 +29,7 @@ function isPokestopMeetsQuestFilters(pokestop) {
                 return !settings.excludedQuestItems.has(id)
 			}
             case 7: {
-                return !settings.excludedQuestPokemon.has(pokestop.quest.pokemon_id) &&
-                (settings.questFormFilter === 'Any' || settings.questFormFilter === getFormName(pokestop.quest.pokemon_id, pokestop.quest.form_id))
+                return !settings.excludedQuestPokemon.has(pokestop.quest.pokemon_id)
             }
             case 12: {
                 const id = '7_' + pokestop.quest.item_amount
@@ -532,12 +531,6 @@ function removePokestop(pokestop) {
 
 function removePokestopMarker(id) { // eslint-disable-line no-unused-vars
     removeMarker(mapData.pokestops[id].marker)
-}
-
-function setQuestFormFilter(name) {
-    settings.questFormFilter = name
-    updatePokestops()
-    updateMap({ loadAllPokestops: true })
 }
 
 function excludeQuestPokemon(id) { // eslint-disable-line no-unused-vars
