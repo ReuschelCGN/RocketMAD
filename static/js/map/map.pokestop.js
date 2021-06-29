@@ -530,14 +530,14 @@ function removePokestop(pokestop) {
     }
 }
 
-function removePokestopMarker(id) { // eslint-disable-line no-unused-vars
-    removeMarker(mapData.pokestops[id].marker)
-}
-
 function setQuestFormFilter(name) {
     settings.questFormFilter = name
     updatePokestops()
     updateMap({ loadAllPokestops: true })
+}
+
+function removePokestopMarker(id) { // eslint-disable-line no-unused-vars
+    removeMarker(mapData.pokestops[id].marker)
 }
 
 function excludeQuestPokemon(id) { // eslint-disable-line no-unused-vars
