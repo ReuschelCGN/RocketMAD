@@ -187,6 +187,7 @@ function pokemonLabel(item) {
         verifiedDisplay = '<i id="despawn-unverified" class="fas fa-exclamation-triangle" title="Despawn time not verified"></i>'
     }
 
+
     if (item.seen_type === 'nearby_stop') {
         nearbyStopWarning = `
             <div class="info-container">
