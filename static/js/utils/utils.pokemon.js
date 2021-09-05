@@ -243,7 +243,6 @@ function createPokemonMarker(pokemon, generateImages) {
         iconSize: [32, 32]
     })
 
-    return L.marker([pokemon.latitude, pokemon.longitude], { icon: icon })
     let offsetLat = 0
     let offsetLon = 0
     if (pokemon.seen_type === 'nearby_stop' || pokemon.seen_type === 'nearby_cell') {
