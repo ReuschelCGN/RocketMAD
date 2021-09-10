@@ -171,11 +171,11 @@ function getPokemonRarityName(pokemonId) {
 }
 
 function getLocationNearStop() {
-    return '❗ ' + i18n('Location inaccurate') + '.<br>' + i18n('Pokemon close to stop')
+    return '⚠️ ' + i18n('Location inaccurate') + '.<br>' + i18n('Pokemon close to stop') + ' ❗'
 }
 
 function getLocationInCell() {
-    return '❗ ' + i18n('Location very inaccurate') + '.<br>' + i18n('Pokemon in L15 S2 cell')
+    return '⚠️ ' + i18n('Location very inaccurate') + '.<br>' + i18n('Pokemon in L15 S2 cell') + ' ❗'
 }
 
 function getPokemonRawIconUrl(pokemon, generateImages) {
