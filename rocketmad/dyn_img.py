@@ -380,7 +380,7 @@ class ImageGenerator:
         if costume > 0:
             costume_suffix = '.c' + PokemonDisplayProto().Costume.Name(costume)
 
-        gender_suffix = '.g2' if gender == FEMALE else ''
+        gender_suffix = '.g2' if gender == FEMALE or pkm == 592 or pkm == 593 else ''
         shiny_suffix = '.s' if shiny else ''
 
         filename = f'pm{pkm}{form_suffix}{costume_suffix}{gender_suffix}' \
@@ -401,6 +401,8 @@ class ImageGenerator:
                 '_{:02d}'.format(gender - 1))
         else:
             gender_form_asset_suffix = '_00'
+        if pkm == 592 or pkm == 593:
+            gender_form_asset_suffix = '_01'
         costume_asset_suffix = '_{:02d}'.format(costume) if costume > 0 else ''
         shiny_suffix = '_shiny' if shiny else ''
 
