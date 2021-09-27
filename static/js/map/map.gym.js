@@ -453,7 +453,6 @@ function gymLabel(gym) {
               <div class='team ${teamName.toLowerCase()}'>
                 <strong>${i18n(teamName)}</strong>
               </div>
-              ${weatherDisplay}
             </div>
             <div id='gym-container-right'>
               <div class='title'>
@@ -472,6 +471,7 @@ function gymLabel(gym) {
                 <div>
                   ${i18n('Last modified')}: <strong>${timestampToDateTime(gym.last_modified)}</strong>
                 </div>
+              </div>
               </div>
               <div>
                 <a href='javascript:void(0);' onclick='javascript:openMapDirections(${gym.latitude},${gym.longitude},"${settings.mapServiceProvider}");' title='${i18n('Open in')} ${mapServiceProviderNames[settings.mapServiceProvider]}'><i class="fas fa-map-marked-alt"></i> ${gym.latitude.toFixed(5)}, ${gym.longitude.toFixed(5)}</a>
