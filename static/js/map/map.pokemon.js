@@ -296,7 +296,7 @@ function pokemonLabel(item) {
             </div>
             <div id='pokemon-container-right'>
               <div class='title'>
-                ${name} ${formDisplay} <i class='fas ${genderClasses[gender - 1]}'></i> #${id} ${weatherBoostDisplay}
+                ${name} ${formDisplay} <i class='fas ${genderClasses[gender - 1]}'></i><br />Dex: #${id} ${weatherBoostDisplay}
               </div>
               <div class='disappear'>
                 ${timestampToTime(disappearTime)} (<span class='label-countdown' disappears-at='${disappearTime}'>00m00s</span>) ${verifiedDisplay}
