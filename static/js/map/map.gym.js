@@ -453,6 +453,7 @@ function gymLabel(gym) {
               <div class='team ${teamName.toLowerCase()}'>
                 <strong>${i18n(teamName)}</strong>
               </div>
+              ${weatherDisplay}
             </div>
             <div id='gym-container-right'>
               <div class='title'>
