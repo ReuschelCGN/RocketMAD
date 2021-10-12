@@ -424,7 +424,7 @@ function gymLabel(gym) {
 
     const gymS2CellId = S2.toId(S2.S2Cell.FromLatLng({ lat: gym.latitude, lng: gym.longitude }, 10).toHilbertQuadkey());
     const weather = mapData.weather[gymS2CellId]
-    if (weather) {
+    if (weather && isValidRaid(gym.raid)) {
         weatherDisplay = $('<div class="wsnowrap" style="margin-top:3px;" />')
         $('<img />',
             { src: getWeatherIconUrl(weather),
