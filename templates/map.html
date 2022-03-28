@@ -117,12 +117,15 @@
       <li><a href="{{ url_for('pokemon_history_page') }}"><i class="material-icons">pets</i>{{ i18n('Pokémon history') }}</a></li>
       {% endif %}
       {% if quest_page %}
+      <li class="divider" tabindex="-1"></li>
       <li><a href="{{ url_for('quest_page') }}"><i class="material-icons">explore</i>{{ i18n('Quests') }}</a></li>
       {% endif %}
       {% if admin %}
+      <li class="divider" tabindex="-1"></li>
       <li><a href="{{ url_for('admin_page') }}"><i class="material-icons">dashboard</i>Admin</a></li>
       {% endif %}
       {% if madmin_url %}
+      <li class="divider" tabindex="-1"></li>
       <li><a href="{{ madmin_url }}" target="_blank"><i class="material-icons">phone_android</i>MADmin</a></li>
       {% endif %}
       {% if donate_url or patreon_url %}
@@ -1599,6 +1602,27 @@
       <li>
         <div class="collapsible-header"><i class="material-icons">settings_backup_restore</i>{{ i18n('Backup & reset') }}</div>
         <div class="collapsible-body">
+          <div class="settings-container">
+            <div class="form-control">
+              <div><a id="save-settings-button" class="waves-effect waves-light btn"><i class="material-icons left">settings_backup_restore</i>{{ i18n('Save current settings') }}</a></div>
+            </div>
+            <div class="form-control">
+              <div class="input-field">
+                <div class="select-title">{{ i18n('Load saved settings') }}</div>
+                <select id="load-settings-select">
+                  <!-- Options are dynamically added. -->
+                </select>
+              </div>
+            </div>
+            <div class="form-control">
+              <div class="input-field">
+                <div class="select-title">{{ i18n('Delete saved settings') }}</div>
+                <select id="delete-settings-select">
+                  <!-- Options are dynamically added. -->
+                </select>
+              </div>
+            </div>
+          </div>
           <div class="settings-container">
             <div class="form-control">
               <input id="settings-file-input" type="file" accept=".txt" style="display:none;">
