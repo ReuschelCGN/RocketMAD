@@ -594,7 +594,11 @@
         "isReward": false
       },
       "2": {
-        "ids": [],
+        "ids": [
+          130,
+          430,
+          464
+        ],
         "isReward": false
       },
       "3": {
