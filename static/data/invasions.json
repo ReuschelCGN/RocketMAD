@@ -27,9 +27,9 @@
       },
       "2": {
         "ids": [
-          143,
+          282,
           62,
-          282
+          143
         ],
         "isReward": false
       },
@@ -119,17 +119,15 @@
       },
       "2": {
         "ids": [
-          103,
-          148,
-          330
+          103
         ],
-        "isReward": false
+        "isReward": true
       },
       "3": {
         "ids": [
           148,
-          149,
-          330
+          330,
+          149
         ],
         "isReward": false
       }
@@ -278,20 +276,19 @@
     "pokemon": {
       "1": {
         "ids": [
-          331,
-          152
+          102
         ],
         "isReward": true
       },
       "2": {
         "ids": [
-          332
+          102
         ],
-        "isReward": true
+        "isReward": false
       },
       "3": {
         "ids": [
-          154
+          102
         ],
         "isReward": false
       }
@@ -377,23 +374,19 @@
     "pokemon": {
       "1": {
         "ids": [
-          399,
-          19
+          293
         ],
         "isReward": true
       },
       "2": {
         "ids": [
-          400,
-          294,
-          20
+          293
         ],
-        "isReward": true
+        "isReward": false
       },
       "3": {
         "ids": [
-          295,
-          400
+          293
         ],
         "isReward": false
       }
@@ -456,8 +449,7 @@
       "3": {
         "ids": [
           65,
-          97,
-          203
+          97
         ],
         "isReward": false
       }
@@ -568,8 +560,8 @@
       "3": {
         "ids": [
           6,
-          248,
-          260
+          260,
+          248
         ],
         "isReward": false
       }
@@ -643,8 +635,8 @@
       },
       "2": {
         "ids": [
-          130,
           430,
+          130,
           464
         ],
         "isReward": false
