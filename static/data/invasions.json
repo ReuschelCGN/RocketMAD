@@ -550,23 +550,23 @@
     "pokemon": {
       "1": {
         "ids": [
-          104
+          1
         ],
         "isReward": true
       },
       "2": {
         "ids": [
-          466,
-          139,
-          405
+          169,
+          3,
+          139
         ],
         "isReward": false
       },
       "3": {
         "ids": [
-          248,
-          6,
-          260
+          389,
+          260,
+          248
         ],
         "isReward": false
       }
@@ -578,23 +578,23 @@
     "pokemon": {
       "1": {
         "ids": [
-          102
+          4
         ],
         "isReward": true
       },
       "2": {
         "ids": [
-          149,
-          373,
-          103
+          303,
+          6,
+          373
         ],
         "isReward": false
       },
       "3": {
         "ids": [
           212,
-          282,
-          208
+          208,
+          282
         ],
         "isReward": false
       }
@@ -606,14 +606,14 @@
     "pokemon": {
       "1": {
         "ids": [
-          96
+          7
         ],
         "isReward": true
       },
       "2": {
         "ids": [
-          319,
           257,
+          9,
           131
         ],
         "isReward": false
@@ -621,7 +621,7 @@
       "3": {
         "ids": [
           229,
-          275,
+          452,
           31
         ],
         "isReward": false
@@ -641,14 +641,14 @@
       "2": {
         "ids": [
           430,
-          464,
-          130
+          68,
+          464
         ],
         "isReward": false
       },
       "3": {
         "ids": [
-          380
+          381
         ],
         "isReward": true
       }
