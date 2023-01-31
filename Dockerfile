@@ -4,7 +4,7 @@
 #   docker run -d -P rocketmap -a ptc -u YOURUSERNAME -p YOURPASSWORD -l "Seattle, WA" -st 10 --gmaps-key CHECKTHEWIKI
 
 # Stage 0: build static assets using Node
-FROM node:14-slim
+FROM node:12-slim
 
 WORKDIR /usr/src/app
 
